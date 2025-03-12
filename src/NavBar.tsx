@@ -22,6 +22,18 @@ const Navbar = () => {
       });
     }
   };
+
+  const resumeScroll = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    event.preventDefault(); // Prevent default anchor behavior
+  
+    const targetElement = document.getElementById("resume");
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop - 100, // Adjust for fixed navbar height
+        behavior: "smooth",
+      });
+    }
+  };
   
 
 
@@ -29,7 +41,7 @@ const Navbar = () => {
     <nav className="flex justify-between items-center p-8 px-10 bg-black shadow-md fixed w-full top-0 z-50">
       {/* Left Side: Logo and Name */}
       <a href="#home" onClick={(e) => handleScroll(e, "home")} className="flex items-center gap-8">
-        <img src="./src/assets/Facebook_Logo_2023.png" alt="Logo" className="h-10 w-10" />
+        {/* <img src="" alt="Logo" className="h-10 w-10" /> */}
         <span className="text-4xl font-semibold text-white">Collin Columbus</span>
       </a>
 
@@ -55,7 +67,7 @@ const Navbar = () => {
         <li>
           <a 
             href="#resume" 
-            onClick={(e) => handleScroll(e, "resume")} 
+            onClick={(e) => resumeScroll(e)} 
             className="text-white text-lg relative transition-all hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-500"
           >
             Resume

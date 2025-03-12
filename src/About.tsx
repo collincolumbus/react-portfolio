@@ -21,13 +21,16 @@ const About = () => {
                 {/* Right Side: Heading, Text */}
                 <div className="max-w-xl">
                     <h2 className="text-5xl font-semibold mb-4 leading-tight text-center">About Me</h2>
-                    <p className="text-lg text-white mb-6">
+                    <p className="text-lg text-white mb-4">
                         My name is Collin Columbus, and I'm a full stack developer based in Saint Paul, Minnesota.
-                        I graduated from Augsburg University with a BS in Computer Science.
+                        I  recently graduated from Augsburg University with a BS in Computer Science.
                         <br />
                         <br />
                         I'm a passionate developer specializing in building interactive web applications. 
                         With experience in modern front- and back-end technologies, I focus on performant and user-friendly experiences.
+                        <br/>
+                        <br/>
+                        I prioritize collaboration and communication with my clients, to ensure that they receive the best product possible.
                     </p>
                 </div>
             </div>
