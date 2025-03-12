@@ -56,7 +56,7 @@ const Landing = () => {
                 background: "linear-gradient(45deg, #3b82f6, #8b5cf6, #ec4899)",
               }}
             ></div>
-            <img className="w-full h-full object-cover z-10" src="./public/assets/Headshot2.png" alt="Headshot"/>
+            <img className="w-full h-full object-cover z-10" src="./assets/Headshot2.png" alt="Headshot"/>
             <div className="absolute bottom-0 left-0 w-full h-1/5 bg-gradient-to-t from-black to-transparent z-11"></div>
           </div>
         </div>
@@ -66,7 +66,7 @@ const Landing = () => {
           <a href="#work" onClick={(e) => workScroll(e)} className="text-white text-lg font-semibold flex flex-col items-center 
           hover:text-blue-500 transition text-lg hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-blue-500 to-blue-500">
             SEE WORK
-            <img src="./public/assets/double_arrow_down.svg?v=2" alt="Logo" 
+            <img src="./assets/double_arrow_down.svg?v=2" alt="Logo" 
             className="h-16 w-16 text-white animate-[fadeBounce_2.5s_ease-in-out_infinite]"/>
           </a>
         </div>
