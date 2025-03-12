@@ -51,7 +51,7 @@ const Landing = () => {
           <div className="relative w-[450px] h-[450px] flex items-center justify-center">
 
             {/* Glowing Ball */}
-            <div   className="absolute w-76 h-76 mt-12 rounded-full blur-2xl opacity-100 swirlPulseCustom z-0"
+            <div   className="absolute w-72 h-72 mt-12 rounded-full blur-2xl opacity-100 swirlPulseCustom z-0"
               style={{
                 background: "linear-gradient(45deg, #3b82f6, #8b5cf6, #ec4899)",
               }}
