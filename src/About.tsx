@@ -1,12 +1,12 @@
 const About = () => {
     const logos = [
-        "./src/assets/HTML5.png",
-        "./src/assets/CSS3.png",
-        "./src/assets/JS.png",
-        "./src/assets/React.png",
-        "./src/assets/Typescript.png",
-        "./src/assets/nodejs.png",
-        "./src/assets/MongoDB.png",
+        "./assets/HTML5.png",
+        "./assets/CSS3.png",
+        "./assets/JS.png",
+        "./assets/React.png",
+        "./assets/Typescript.png",
+        "./assets/nodejs.png",
+        "./assets/MongoDB.png",
     ];
 
     return (
