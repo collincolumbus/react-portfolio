@@ -1,0 +1,225 @@
+@import "tailwindcss";
+
+
+:root{
+  background-color: black;
+}
+
+/* Button styling for close, minimize, and expand buttons */
+.window-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  /* border: 2px solid #fff; */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Window controls (close, minimize, expand buttons) */
+.project-window {
+  position: relative;
+}
+
+/* Styling for the buttons when hovered */
+.window-btn:hover {
+  transform: scale(1.3); /* Slightly enlarge the buttons on hover */
+}
+
+/* Controls on the top right corner */
+.window-controls {
+  display: flex;
+  gap: 8px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+}
+
+/* Hover effect on project windows */
+.project-window:hover {
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.7), 0 0 15px rgba(139, 92, 246, 0.7); /* Glowing effect */
+}
+
+/* Custom Gradient Shadow */
+.gradient-shadow {
+  position: relative;
+}
+
+.gradient-shadow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit; /* Ensures the shadow matches the element's border-radius */
+  background: linear-gradient(45deg, #3b82f6, #8b5cf6, #ec4899); /* Your gradient colors */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out;
+  z-index: -1; /* Ensures it stays behind the element */
+}
+
+.gradient-shadow:hover::before {
+  opacity: 0.5; /* Shows the gradient on hover */
+}
+
+/* Swirling gradient background with glowing effect */
+.swirlCustom {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 9999px; /* Rounded corners */
+  cursor: pointer;
+  color: white; /* Keep the text color white */
+  overflow: hidden;
+  background: linear-gradient(45deg, #3b82f6, #8b5cf6, #ec4899); /* Blue to purple gradient */
+  background-size: 200% 200%;
+  animation: swirlGradient 4s infinite linear, pulseEffect 3s infinite ease-in-out; /* Adding pulse effect here */
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.7), 0 0 30px rgba(139, 92, 246, 0.7); /* Constant glowing effect */
+}
+
+.skill-logos {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.skill-logos:hover {
+  /* background: linear-gradient(to right, #3b82f6, #8b5cf6); /* Blue to purple gradient */
+  background-size: 200% 200%;
+  animation: swirlGradient 4s infinite linear;
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.7), 0 0 30px rgba(139, 92, 246, 0.7); /* Glowing effect */
+  transform: scale(1.1);
+}
+
+/* Optional: For better spacing */
+.swirlCustom:focus {
+  outline: none;
+}
+
+.swirlPulseCustom {
+  animation: swirlGradient 4s infinite linear;
+  background-size: 200% 200%;
+}
+
+.contact-button {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 9999px; /* Rounded corners */
+  cursor: pointer;
+  color: white; /* Keep the text color white */
+  overflow: hidden;
+  /* Gradient Background (Needed for Animation) */
+  background: linear-gradient(45deg, #3b82f6, #8b5cf6, #ec4899);
+  background-size: 400% 400%; /* Allows movement */
+  /* Keep animation always running */
+  animation: swirlGradient 4s infinite linear;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.7), 0 0 30px rgba(139, 92, 246, 0.7);
+}
+
+/* Hover state: Stop the pulse effect but keep the swirl animation */
+.contact-button:hover {
+  transform: scale(1.15);
+  background-size: 200% 200%;
+  animation: swirlGradient 4s infinite linear, pulseEffect 2s infinite ease-in-out;
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.7), 0 0 60px rgba(139, 92, 246, 0.7);
+}
+
+.submit-button{
+  position: relative;
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 9999px; /* Rounded corners */
+  cursor: pointer;
+  color: white; /* Keep the text color white */
+  overflow: hidden;
+  /* Gradient Background (Needed for Animation) */
+  background: linear-gradient(45deg, #3b82f6, #8b5cf6, #ec4899);
+  background-size: 400% 400%; /* Allows movement */
+  /* Keep animation always running */
+  animation: swirlGradient 4s infinite linear;
+
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.7), 0 0 30px rgba(139, 92, 246, 0.7);
+}
+
+.submit-button:hover {
+  transform: scale(1.15);
+  background-size: 200% 200%;
+  animation: swirlGradient 4s infinite linear, pulseEffect 2s infinite ease-in-out;
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.7), 0 0 60px rgba(139, 92, 246, 0.7);
+}
+
+
+
+
+
+
+
+
+@keyframes fadeBounce {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.25;
+  }
+  50% {
+    transform: translateY(16px);
+    opacity: 1;
+  }
+}
+
+@keyframes swirlGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes pulseCustom {
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+}
+
+
+@keyframes pulseEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15); /* Scales the button to 1.05 */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+
