@@ -15,7 +15,7 @@ const Work = () => {
             </div>
             {/* Project Image */}
             <img
-              src="./public/assets/works/RHR.jpg"
+              src="./assets/works/RHR.jpg"
               alt="Project Screenshot"
               className="w-full object-cover rounded-b-lg block mt-8 cursor-pointer"
                 onClick={() => window.open("https://www.roughhouserox.com", "_blank")}
