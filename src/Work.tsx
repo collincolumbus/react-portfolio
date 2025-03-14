@@ -6,12 +6,11 @@ const Work = () => {
         <div className="flex flex-wrap justify-center gap-8 items-start">
           {/* Project 1 */}
           <div className="project-window relative w-[400px] bg-gray-200 rounded-lg border border-gray-600 overflow-hidden p-0 flex flex-col 
-            transform transition-transform duration-300 hover:scale-110">
+            transform transition-transform duration-300 hover:scale-110 cursor-pointer" onClick={() => window.open("https://www.roughhouserox.com", "_blank")}>
             <div className="window-controls absolute top-2 right-2 flex gap-2">
                 <button className="window-btn bg-red-600 hover:bg-red-700"></button>
                 <button className="window-btn bg-yellow-500 hover:bg-yellow-600"></button>
-                <button className="window-btn bg-green-600 hover:bg-green-700"
-                  onClick={() => window.open("https://www.roughhouserox.com", "_blank")}></button>
+                <button className="window-btn bg-green-600 hover:bg-green-700"></button>
             </div>
             {/* Project Image */}
             <img

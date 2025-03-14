@@ -13,6 +13,7 @@
   /* border: 2px solid #fff; */
   cursor: pointer;
   transition: transform 0.3s ease;
+  box-shadow: 0 0 2px black;
 }
 
 /* Window controls (close, minimize, expand buttons) */
