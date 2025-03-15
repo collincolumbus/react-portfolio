@@ -1,4 +1,4 @@
-import { Splide, SplideSlide } from "@splidejs/react-splide";
+import { Splide, SplideSlide } from  "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/splide/dist/css/splide.min.css";
 
@@ -17,9 +17,16 @@ const About = () => {
         <section className="h-screen flex flex-col justify-center items-center px-12 bg-black text-white pt-24 -mt-16">
             <div id="about" className="flex w-full max-w-6xl items-center justify-between transform -mt-24 pt-20">
                 
-                {/* Left Side: Placeholder */}
-                <div className="w-80 h-80 bg-gray-700 flex items-center justify-center">
-                    <span className="text-gray-400">Placeholder</span>
+            <div className="relative w-[450px] h-[450px] flex items-center justify-center">
+
+                {/* Glowing Ball */}
+                <div   className="absolute w-64 h-64 ml-20 rounded-full blur-2xl opacity-100 swirlPulseCustom z-0"
+                style={{
+                    background: "linear-gradient(45deg,rgb(87, 152, 255),rgb(39, 0, 129), #ec4899)",
+                }}
+                ></div>
+                <img className="w-full h-auto mt-5 object-cover z-10" src="./assets/AboutMe.png" alt="Headshot"/>
+                <div className="absolute -bottom-7 left-0 w-full h-1/2 bg-gradient-to-t from-black to-transparent z-11"></div>
                 </div>
 
                 {/* Right Side: Heading, Text */}
