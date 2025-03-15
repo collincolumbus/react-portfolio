@@ -7,9 +7,7 @@ export default defineConfig({
   plugins: [react(),
             tailwindcss(),
   ],
-  build: {
-    rollupOptions: {
-      external: ["@splidejs/react-splide"]
-    }
+  optimizeDeps: {
+    include: ["@splidejs/react-splide"]
   }
-})
+});
