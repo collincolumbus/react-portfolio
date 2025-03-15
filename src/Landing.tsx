@@ -48,15 +48,15 @@ const Landing = () => {
           </div>
   
           {/* Right Side: Headshot */}
-          <div className="relative w-[450px] h-[450px] flex items-center justify-center">
+          <div className="relative w-[500px] h-[500px] flex items-center justify-center">
 
             {/* Glowing Ball */}
-            <div   className="absolute w-72 h-72 mt-12 rounded-full blur-2xl opacity-100 swirlPulseCustom z-0"
+            <div   className="absolute w-80 h-80 mt-12 rounded-full blur-2xl opacity-100 swirlPulseCustom z-0"
               style={{
                 background: "linear-gradient(45deg, #3b82f6, #8b5cf6, #ec4899)",
               }}
             ></div>
-            <img className="w-full h-full object-cover z-10" src="./assets/Headshot2.png" alt="Headshot"/>
+            <img className="w-full h-full object-cover z-10" src="./assets/Headshot.png" alt="Headshot"/>
             <div className="absolute bottom-0 left-0 w-full h-1/5 bg-gradient-to-t from-black to-transparent z-11"></div>
           </div>
         </div>

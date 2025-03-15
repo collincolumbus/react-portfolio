@@ -17,7 +17,7 @@ const About = () => {
         <section className="h-screen flex flex-col justify-center items-center px-12 bg-black text-white pt-24 -mt-16">
             <div id="about" className="flex w-full max-w-6xl items-center justify-between transform -mt-24 pt-20">
                 
-            <div className="relative w-[450px] h-[450px] flex items-center justify-center">
+                <div className="relative w-[500px] h-[500px] flex items-center justify-center">
 
                 {/* Glowing Ball */}
                 <div   className="absolute w-64 h-64 ml-20 rounded-full blur-2xl opacity-100 swirlPulseCustom z-0"
@@ -25,7 +25,7 @@ const About = () => {
                     background: "linear-gradient(45deg,rgb(87, 152, 255),rgb(39, 0, 129), #ec4899)",
                 }}
                 ></div>
-                <img className="w-full h-auto mt-5 object-cover z-10" src="./assets/AboutMe.png" alt="Headshot"/>
+                <img className="w-full h-auto mt-5 object-cover z-10" src="./assets/AboutMe2.png" alt="Headshot"/>
                 <div className="absolute -bottom-7 left-0 w-full h-1/2 bg-gradient-to-t from-black to-transparent z-11"></div>
                 </div>
 
