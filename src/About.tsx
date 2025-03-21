@@ -31,7 +31,7 @@ const About = () => {
 
                 {/* Right Side: Heading, Text */}
                 <div className="max-w-xl">
-                    <h2 className="text-5xl font-semibold mb-4 leading-tight text-center">About Me</h2>
+                    <h2 className="text-5xl font-semibold mb-4 leading-tight text-center monomakh-regular">About Me</h2>
                     <p className="text-lg text-white mb-4">
                         My name is Collin Columbus, and I'm a full stack developer based in Saint Paul, Minnesota.
                         I recently graduated from Augsburg University with a BS in Computer Science.
@@ -49,7 +49,7 @@ const About = () => {
             {/* Skills Section */}
             <div className="flex flex-col items-center gap-8 pt-20 w-full">
                 {/* Skills Heading */}
-                <h2 className="text-4xl font-semibold leading-tight text-center">Skills</h2>
+                <h2 className="text-4xl font-semibold leading-tight text-center monomakh-regular">Skills</h2>
 
                 {/* Infinite Scrolling Carousel */}
                 <div className="w-full max-w-7xl">

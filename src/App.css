@@ -5,6 +5,19 @@
   background-color: black;
 }
 
+.monomakh-regular {
+  font-family: "Monomakh", system-ui;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0.1rem;
+}
+
+.young-serif-regular {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* Button styling for close, minimize, and expand buttons */
 .window-btn {
   width: 12px;

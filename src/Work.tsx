@@ -1,7 +1,7 @@
 const Work = () => {
     return (
       <section className="h-screen pt-24 pb-12 bg-black text-white">
-        <h2 id = "work" className="text-5xl font-semibold text-center mb-4" style={{ scrollMarginTop: 8 }}>Professional Work</h2>
+        <h2 id = "work" className="text-5xl font-semibold text-center mb-4 monomakh-regular" style={{ scrollMarginTop: 8 }}>Professional Work</h2>
         <p className="text-xl font-semibold text-center mb-12">Click to expand</p>
         <div className="flex flex-wrap justify-center gap-8 items-start">
           {/* Project 1 */}
@@ -30,13 +30,13 @@ const Work = () => {
                 <button className="window-btn bg-green-600 hover:bg-green-700"></button>
             </div>
             {/* Centered Text */}
-            <h2 className="text-2xl font-semibold text-black">More Coming Soon...</h2>
+            <h2 className="text-2xl font-semibold text-black ">More Coming Soon...</h2>
           </div>
 
           
         </div>
 
-        <h2 className="text-4xl font-semibold text-center mt-20 mb-16">Projects</h2>
+        <h2 className="text-4xl font-semibold text-center mt-20 mb-16 monomakh-regular">Projects</h2>
 
         
       </section>

@@ -38,11 +38,12 @@ const Navbar = () => {
 
 
   return (
-    <nav className="flex justify-between items-center p-8 px-10 bg-black shadow-md fixed w-full top-0 z-50">
+    <nav className="flex justify-between items-center p-8 px-16 bg-gradient-to-b from-black via-black/95 via-60% to-transparent fixed w-full top-0 z-50">
+      
       {/* Left Side: Logo and Name */}
       <a href="#home" onClick={(e) => handleScroll(e, "home")} className="flex items-center gap-8">
         {/* <img src="" alt="Logo" className="h-10 w-10" /> */}
-        <span className="text-4xl font-semibold text-white">Collin Columbus</span>
+        <span className="text-5xl font-semibold text-white monomakh-regular">Collin Columbus</span>
       </a>
 
       <ul className="flex gap-16 text-white">

@@ -10,7 +10,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="flex flex-col items-center py-20 bg-black text-white">
-      <h2 className="text-5xl font-semibold mb-4 text-center">Contact Me</h2>
+      <h2 className="text-5xl font-semibold mb-4 text-center monomakh-regular">Contact Me</h2>
       <p className="text-lg text-white mb-16 text-center max-w-lg">
         Reach out to me with any inquiries.
         <br/>

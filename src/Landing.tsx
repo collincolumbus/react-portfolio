@@ -25,14 +25,14 @@ const Landing = () => {
   };
 
     return (
-      <section id = "home" className="h-screen flex flex-col justify-center items-center px-12 bg-black text-white">
-        <div className="flex w-full max-w-6xl items-center justify-between -mt-16">
+      <section id = "home" className="min-h-screen flex flex-col justify-center items-center px-6 sm:px-12 bg-black text-white">
+        <div className="flex flex-col sm:flex-row w-full max-w-6xl items-center justify-between -mt-16 text-center sm:text-left">
           {/* Left Side: Heading, Text, and Contact Button */}
-          <div className="max-w-lg">
-            <h1 className="text-6xl font-semibold leading-tight text-center">
+          <div className="max-w-xl">
+            <h1 className="text-4xl sm:text-6xl font-semibold leading-tight text-center monomakh-regular">
               Building Seamless <br /> Web Experiences
             </h1>
-            <p className="text-xl text-white mt-4 px-12">
+            <p className="text-xl text-white mt-4 px-12 text-center">
               Hi, I'm Collin, a Web Developer and Designer.
               <br />
               Let's build something together!
