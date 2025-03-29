@@ -43,7 +43,7 @@ const Navbar = () => {
       {/* Left Side: Logo and Name */}
       <a href="#home" onClick={(e) => handleScroll(e, "home")} className="flex items-center gap-8">
         {/* <img src="" alt="Logo" className="h-10 w-10" /> */}
-        <span className="text-5xl font-semibold text-white monomakh-regular">Collin Columbus</span>
+        <img className="w-full h-20 object-cover z-10" src="./assets/Logo2.png" alt="Logo"/>
       </a>
 
       <ul className="flex gap-16 text-white">
